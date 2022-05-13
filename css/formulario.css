@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    background: linear-gradient(
+        90deg,
+        rgb(32, 0, 36)0%,
+        rgba(9, 9, 121, 1)0%,
+        rgba(0, 212, 255, 1)100%
+        );
+}
+
+.content{
+    background-color: white;
+    width: 720px;
+    padding: 20px;
+    margin: 20px auto 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 6px 10px black;
+}
+
+.row{
+    padding: 5px;
+}
+
+.buttons{
+    text-align: center;
+}
+
+fieldset{
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-color: #ffffff;
+    box-shadow: 2px 2px 2px #ffffff;
+}
+
+legend{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+label:not(
+    [for="casado"],
+    [for="solteiro"],
+    [for="java"],
+    [for="php"],
+    [for="csharp"]
+){
+    display: inline-block;
+    width: 120px;
+}
+
+/* Mudando as propriedades do button */
+input[type="submit"],
+input[type="reset"]{
+    padding: 5px 10px;
+    background-color: #0eadc9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    transform: scale(1.2);
+}
+
+label[for="java"],
+label[for="php"],
+label[for="csharp"]{
+    border: 1px solid #040004;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+
+label[for="java"]:hover,
+label[for="php"]:hover,
+label[for="csharp"]:hover{         
+    transform: scale(1.2);
+}    
+
+input[type="checkbox"]:checked+label{
+    background-color: #0eadc9;
+    border-color: #0eadc9;
+    color: white;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input{
+    padding: 2px;
+    outline: none;
+}
+
+input[id="nome"],
+input[id="sobrenome"],
+input[id="email"]{
+    width: 480px;
+}
+
+input[id="dtnasc"]{
+    width: 180px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"]{
+    border: none;
+    border-bottom: 2px solid #c2cbce;
+    transition: 0.3s all ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus{
+    color: #0eadc9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-color: #0eadc9;
+}
+
+textarea{
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+/* Mudando o ponteiro do mouse quando estiver sobre os componentes */
+
+label[for="java"]:hover,
+label[for="php"]:hover,
+label[for="csharp"]:hover,
+label[for="submit"]:hover,
+label[for="reset"]:hover{
+    cursor: pointer;
+}
